@@ -23,7 +23,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         {title}
       </h3>
     ) : (
-      <div className="absolute bottom-0 p-8 flex lg:justify-start w-full bg-[rgba(0,0,0,0.5)] rounded-[24px] sm:h-[500px] h-[100px] flex-row md:flex-col gap-2">
+      <div className="absolute bottom-0 p-8 flex lg:justify-start w-full bg-[rgba(0,0,0,0.5)] rounded-[24px] md:h-[170px] lg:h-[300px]  flex-row md:flex-col gap-2">
         <div
           className={`${styles.flexCenter} w-[60px] h-[60px] rounded-full glassmorphism mb-[16px]`}
         >
