@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import styles from "../styles";
 import { TitleText, TypingText } from "../components";
-import { fadeIn, staggerContainer } from "../utils/motion";
+import { fadeIn, staggerContainer, zoomIn } from "../utils/motion";
 
 const World = () => (
   <section className={`${styles.paddings}`}>
@@ -31,25 +31,40 @@ const World = () => (
       >
         <img src="/map.png" alt="map" className="w-[1/2] h-full object-cover" />
 
-        <div className="absolute top-1 right-[5%] ">
+        <motion.div
+          variants={zoomIn(0.1, 0.5)}
+          className="absolute top-1 right-[5%] "
+        >
           <img src="people-card-2.png" alt="people" className="w-full h-full" />
-        </div>
+        </motion.div>
 
-        <div className="absolute bottom-20 right-20">
+        <motion.div
+          variants={zoomIn(1.5, 0.5)}
+          className="absolute bottom-20 right-20"
+        >
           <img src="people-1.png" alt="people" className="w-full h-full" />
-        </div>
+        </motion.div>
 
-        <div className="absolute top-10 left-20">
+        <motion.div
+          variants={zoomIn(0.7, 0.5)}
+          className="absolute top-10 left-20"
+        >
           <img src="people-2.png" alt="people" className="w-full h-full" />
-        </div>
+        </motion.div>
 
-        <div className="absolute top-1/4 left-[5%] ">
+        <motion.div
+          variants={zoomIn(1, 0.3)}
+          className="absolute top-1/4 left-[5%] "
+        >
           <img src="people-card-1.png" alt="people" className="w-full h-full" />
-        </div>
+        </motion.div>
 
-        <div className="absolute top-1/2 left-[40%] ">
+        <motion.div
+          variants={zoomIn(0.1, 1)}
+          className="absolute top-1/2 left-[40%] "
+        >
           <img src="people-3.png" alt="people" className="w-full h-full" />
-        </div>
+        </motion.div>
       </motion.div>
     </motion.div>
   </section>
