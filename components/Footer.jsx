@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import styles from "../styles";
-import { fadeIn, staggerContainer } from "../utils/motion";
-import { socials } from "../constants";
+import { motion } from 'framer-motion';
+import styles from '../styles';
+import { fadeIn, staggerContainer } from '../utils/motion';
+import { socials } from '../constants';
 
 const Footer = () => (
   <footer className={`${(styles.paddings, styles.flexCenter)}`}>
@@ -16,7 +16,7 @@ const Footer = () => (
       <div className="footer-gradient" />
 
       <motion.div
-        variants={fadeIn("up", "tween", 0.2, 0.3)}
+        variants={fadeIn('up', 'tween', 0.2, 0.3)}
         className="mt-[8px]"
       >
         <div className="flex justify-between flex-col md:flex-row items-center md:items-start gap-10">
