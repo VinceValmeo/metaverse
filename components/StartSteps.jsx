@@ -1,4 +1,4 @@
-import styles from "../styles";
+import styles from '../styles';
 
 const StartSteps = ({ text, number }) => (
   <div className="flex items-center gap-3 flex-row">
