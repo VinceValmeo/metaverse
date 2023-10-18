@@ -5,12 +5,12 @@ import { fadeIn, staggerContainer, zoomIn } from "../utils/motion";
 import { socials } from "../constants";
 
 const Footer = () => (
-  <footer className={`${styles.paddings}`}>
+  <footer className={`${(styles.paddings, styles.flexCenter)}`}>
     <motion.footer
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      className={`${styles.xPaddings} py-8 relative text-white`}
+      className={`${styles.innerWidth} py-8 relative text-white `}
     >
       <div className="footer-gradient" />
 
